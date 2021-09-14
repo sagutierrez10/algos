@@ -1,8 +1,9 @@
 const insertionSort = (arr)=>{
 for(var i=1; i< arr.length; i++){
-    while(arr[i]<arr[i-1]){
-        [arr[i], arr[i-1]]=[arr[i-1],arr[i]]
-        i--
+    let j = i
+    while(arr[j]<arr[j-1]){
+        [arr[j], arr[j-1]]=[arr[j-1],arr[j]]
+        j--
     }
 }
 return arr
